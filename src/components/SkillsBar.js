@@ -28,10 +28,10 @@ export default function SkillsBar() {
     };
 
     return(
-        <div style = {{padding: "10px", margin: "0 auto"}}>
+        <div style = {{padding: "10px"}}>
             <h1 style = {{textAlign: "center"}}>Programming Languages</h1>
             <div style = {{color: "white"}}>
-                <SkillBar key={theme} skills={programmingLanguages} animationDuration={5000} colors={colors}/>
+                <SkillBar key={theme} skills={programmingLanguages} animationDelay={0} animationDuration={3000} colors={colors}/>
             </div>
         </div>
     );
