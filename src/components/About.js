@@ -1,5 +1,7 @@
+import Typewriter from 'typewriter-effect';
+
 export default function About(){
     return (
-      <h1></h1>
+      <></>
     )
 }

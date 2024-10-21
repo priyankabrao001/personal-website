@@ -1,22 +1,18 @@
 import { alignProperty } from '@mui/material/styles/cssUtils';
 import Typewriter from 'typewriter-effect';
+import { useState } from 'react';
 
 export default function Home(){
+    
     return (
-        <div style = {{color: "white", fontFamily: "Poppins", display: 'flex', alignItems: 'center', justifyContent: 'center', height: '90vh', fontSize: 100}}>
+        <div style = {{color: "white", fontFamily: "Poppins", display: 'flex', alignItems: 'center', justifyContent: 'center', height: '50vh', fontSize: 75, float: "center"}}>
             <Typewriter
-                 onInit={(typewriter) => {
-                     typewriter.typeString('Priyanka Rao')
-                    .callFunction(() => {
-                        console.log('String typed out!');
-                    })
-                    .pauseFor(2000)
-                    .callFunction(() => {
-                        console.log('All strings were deleted');
-                    })
-                .start();
-            }}
-        />
-    </div>
+                options={{
+                  strings: ['Priyanka Rao', 'Aspiring full-stack developer'],
+                  autoStart: true,
+                  loop: true,
+                }}
+            />
+        </div>
     )
 }

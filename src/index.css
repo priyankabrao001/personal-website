@@ -5,7 +5,50 @@ h1{
 }
 
 body{
-  background-image: url("https://wallpaperaccess.com/full/11560.jpg");
-  background-size: 100%;
+  font-family: "Poppins", sans-serif;
+  transition: "all 0.7s ease-in-out";
 }
+
+.light{
+  background-image: url('https://wallpapercave.com/wp/wp4555644.jpg');
+  color: white;
+  text-shadow: 2px 2px 5px salmon;
+  background-size: cover;
+  height: 100vh;
+  transition: "all 0.7s ease-in-out";
+}
+
+.dark {
+  background-image: url('https://wallpaperaccess.com/full/11560.jpg');
+  color: white;
+  text-shadow: 2px 2px 5px navy;
+  background-size: cover;
+  height: 100vh;
+  transition: "all 0.7s ease-in-out";
+}
+
+.switch{
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-btn{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  float: center;
+  margin-bottom: 10px;
+  position: sticky;
+}
+
+.toggle-btn:hover{
+  font-size: 18px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+}
+
 
