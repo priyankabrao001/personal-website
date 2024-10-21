@@ -10,7 +10,6 @@ import ReactSwitch from "react-switch";
 
 export const ThemeContext = createContext(null);
 
-
 export default function App() {
 
   const [theme, setTheme] = useState("light")
@@ -20,7 +19,7 @@ export default function App() {
 
   return (
     <ThemeContext.Provider value = {{theme, toggleTheme}}>
-      <div class = {theme} style = {{backgroundSize: "cover"}}>
+      <div class = {`${theme} body`} style = {{backgroundSize: "cover"}}>
         <div class = "switch">
           <label>{theme === "light" ? "Day Theme" : "Night Theme"}</label>
           <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
